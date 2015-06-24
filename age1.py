@@ -10,7 +10,6 @@ def days_since(year, month, day):
     return now - then
 
 if __name__ == '__main__':
-    args = sys.argv
     sys.argv.pop(0)
     if len(sys.argv) == 1:
         print 'date in %s days %s' % (sys.argv[0], days_from_now(sys.argv[0])) 
@@ -22,5 +21,5 @@ if __name__ == '__main__':
 # - split one liners into more readable flow
 # - defend yourself from a different number of arguments than 1 or 3
 # - pretty print the date in 1st case
-# - is that pop ffreally necessary?
-# is this code completely pep8 valid?
+# - is that pop really necessary?
+# - is this code completely pep8 valid?
